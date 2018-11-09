@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7C7C7C;}
+	.st1{fill:#040006;}
+	.st2{fill:#CBD3D5;}
+	.st3{opacity:0.3;}
+	.st4{fill:#00090F;}
+	.st5{fill:#001416;}
+	.st6{fill:#BADAEB;}
+	.st7{fill:#B3B3B3;}
+	.st8{fill:#FCFAEF;}
+	.st9{fill:#001634;}
+	.st10{opacity:0.1;}
+	.st11{opacity:0.8;}
+	.st12{fill:#FFFFFF;}
+	.st13{fill:#FEFEFE;}
+	.st14{fill:none;stroke:#CBD3D5;stroke-width:5;stroke-miterlimit:10;}
+	.st15{fill:#73AF97;}
+	.st16{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st17{fill:#CBD3D5;stroke:#040006;stroke-width:11;stroke-miterlimit:10;}
+	.st18{fill:#BADAEB;stroke:#B5B5B3;stroke-width:10;stroke-miterlimit:10;}
+	.st19{opacity:0.4;fill:#FEFEFE;}
+	.st20{opacity:0.4;}
+	.st21{fill:#F2F2F2;stroke:#050006;stroke-width:5;stroke-miterlimit:10;}
+	.st22{fill:none;stroke:#FFFFFF;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<polygon class="st2" points="224.7,700.1 224.7,700.1 224.7,700 	"/>
+	<polygon class="st2" points="1143.6,700 1143.6,700.1 1143.7,700.1 	"/>
+</g>
+<path class="st17" d="M922.2,679.2H556c-37,0-66.9-30-66.9-66.9V94.6c0-37,30-66.9,66.9-66.9h366.2c37,0,66.9,30,66.9,66.9v517.6
+	C989.2,649.2,959.2,679.2,922.2,679.2z"/>
+<path class="st18" d="M925.6,598.7H561.2c-1,0-1.9-0.8-1.9-1.9v-480c0-1,0.8-1.9,1.9-1.9h364.4c1,0,1.9,0.8,1.9,1.9v480
+	C927.5,597.9,926.6,598.7,925.6,598.7z"/>
+<polygon class="st19" points="652.7,205.5 571.1,511.3 627.2,511.3 716.4,205.5 "/>
+<g class="st20">
+	<polygon class="st13" points="656.3,511.3 642.5,511.3 733.9,205.5 745.5,205.5 	"/>
+</g>
+<circle class="st21" cx="739.8" cy="637.7" r="22.1"/>
+<path class="st2" d="M745.9,648.1h-13.2c-2.1,0-3.8-1.7-3.8-3.8v-13.2c0-2.1,1.7-3.8,3.8-3.8h13.2c2.1,0,3.8,1.7,3.8,3.8v13.2
+	C749.7,646.4,748,648.1,745.9,648.1z"/>
+<path class="st22" d="M601.9,72.7h-58.3c-13.3,0-24.1,10.8-24.1,24.1v50.4"/>
+<line class="st22" x1="518.2" y1="164" x2="518.2" y2="199.9"/>
+<path class="st22" d="M519.5,593.6v38c0,11,8.9,19.8,19.8,19.8h68.1"/>
+</svg>
