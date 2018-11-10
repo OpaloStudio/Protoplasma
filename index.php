@@ -4,57 +4,39 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="utf-8">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
 
-	<meta name="title" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<meta name="description" content="">
+    <meta name="title" content="">
 
-	<meta name="keyword" content="">
+    <meta name="description" content="">
 
-	<title>Proto-plasma</title>
-	<link rel="icon" type="image/png" id="dinamico" href="vistas/img/elfavicon/favnar.png" />
-	
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<link rel="stylesheet" href="vistas/css/app.css">
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
-	<link rel="stylesheet" href="vistas/js/plugins/mtr-datepicker.min.css">
-	<link rel="stylesheet" href="vistas/js/plugins/mtr-datepicker.default-theme.min.css">
-	<link rel="stylesheet" href="vistas/js/plugins/jqueryui/jquery-ui.css">
-	<link rel="stylesheet" href="vistas/js/plugins/dropzone/dropzone.css">
-	<link href="vistas/js/plugins/fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
-	<link href="vistas/js/plugins/fileinput/themes/explorer-fas/theme.css" media="all" rel="stylesheet" type="text/css"/>
-	
+    <meta name="keyword" content="">
 
-	
-    <script src="vistas/js/plugins/jquery-3.3.1.min.js"></script>
-	<script src="vistas/js/plugins/fileinput/js/plugins/sortable.js" type="text/javascript"></script>
-    <script src="vistas/js/plugins/fileinput/js/fileinput.js" type="text/javascript"></script>
-    <script src="vistas/js/plugins/fileinput/themes/explorer-fas/theme.js" type="text/javascript"></script>
-	
+    <title>Proto-plasma</title>
+    <link rel="icon" type="image/png" id="dinamico" href="vistas/img/elfavicon/favnar.png" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	<!--<script src="vistas/js/plugins/bootstrap-slider.min.js"></script>-->
-	<script src="vistas/js/plugins/jquery.nicescroll.min.js"></script>
-	<script src="vistas/js/plugins/pinterestgrid.js"></script>
-	<script src="vistas/js/plugins/jssor.slider.min.js"></script>
-	<script src="vistas/js/plugins/mtr-datepicker.min.js"></script>
-	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr9oMOuhvH1-2OTIB3tFzOLCW_cyZVgsY&libraries=places" type="text/javascript"></script>-->
-	<script type="text/javascript" src="https://openpay.s3.amazonaws.com/openpay.v1.min.js"></script>
-	<script type='text/javascript' src="https://openpay.s3.amazonaws.com/openpay-data.v1.min.js"></script> 
-	<script src="vistas/js/plugins/jqueryui/jquery-ui.js"></script>
-	<script src="vistas/js/plugins/dropzone/dropzone.js"></script>
-	<script src="vistas/js/js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="vistas/css/app.css" media="all" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.3.4/dist/interact.min.js"></script>
+    <script src="vistas/js/jquery.nicescroll.min.js"></script>
 
 
 
-	<?php
+    <?php
 	include('controladores/controlador.navbar.php');
 	include('controladores/controlador.favoritos.php');
 	include('modelos/modelo.conexion.php');
@@ -162,7 +144,7 @@ session_start();
 </head>
 
 <body>
-<?php
+    <?php
 include('vistas/modulos/login.php');
 include('vistas/modulos/navbar.php');
 
@@ -283,4 +265,5 @@ else{
 ?>
 
 </body>
+
 </html>
