@@ -37,8 +37,7 @@ session_start();
 
 
     <?php
-	include('controladores/controlador.navbar.php');
-	include('controladores/controlador.favoritos.php');
+	include('controladores/controlador.carga.php');
 	include('modelos/modelo.conexion.php');
 	//Los controladores que se utilizan en todas las páginas, se incluyen fuera del if de abajo.
 	
@@ -53,80 +52,32 @@ session_start();
 
 			case '1':
 			//Registro
-			include('controladores/controlador.registro.php');
+			include('controladores/controlador.docker.php');
 			break;
 
 			case '2':
 			//Perfil
-			include('controladores/controlador.perfil.php');
+			include('controladores/controlador.ventanaCalendario.php');
 			break;
 
 			case '3':
 			//Nueva publicación
-			include('controladores/controlador.nueva.php');
+			include('controladores/controlador.ventanaContacto.php');
 			break;
 
 			case '4':
 			//Publicación
-			include('controladores/controlador.publicacion.php');
-			include('controladores/controlador.modalContacta.php');
-			include('controladores/controlador.modalAgenda.php');
+			include('controladores/controlador.ventanaInfo.php');
 			break;
 
 			case '5':
 			//Buscador
-			include('controladores/controlador.buscador.php');
+			include('controladores/controlador.ventanaMapa.php');
 			break;
 
 			case '6':
 			//Panel de publicaciones
-			include('controladores/controlador.panelPublicaciones.php');
-			include('controladores/controlador.modalElimina.php');
-			break;
-
-			case '7':
-			//Configuración de cuenta
-			include('controladores/controlador.configuracionCuenta.php');
-			break;
-
-			case '8':
-			//Cambio de contraseña dentro del perfil
-			include('controladores/controlador.contraseniaNueva.php');
-			break;
-
-			case '9':
-			//Recuperación de contraseña
-			include('controladores/controlador.recuperarContrasena.php');
-			break;
-
-			case '10':
-			//Recuperación de contraseña
-			include('controladores/controlador.cambiarContrasena.php');
-			break;
-
-			case '11':
-			//Planes inmobiliarios
-			include('controladores/controlador.planes.php');
-			break;
-
-			case '12':
-			//Eliminación de cuenta
-			include('controladores/controlador.eliminarCuenta.php');
-			break;
-
-			case '13':
-			//Formulario de pago
-			include('controladores/controlador.formularioPago.php');
-			break;
-
-			case '14':
-			//Activación de cuenta
-			include('controladores/controlador.activacionCuenta.php');
-			break;
-
-			case '15':
-			//Activación de cuenta
-			include('controladores/controlador.mensajeria.php');
+			include('controladores/controlador.ventanaMision.php');
 			break;
 
 			case 'default':
@@ -145,8 +96,7 @@ session_start();
 
 <body>
     <?php
-include('vistas/modulos/login.php');
-include('vistas/modulos/navbar.php');
+include('vistas/modulos/carga.php');
 
 if(isset($_GET['id'])){
 	include('vistas/modulos/finalizacionPago.php');
@@ -158,109 +108,39 @@ elseif(isset($_GET['page'])){
 
 		case '1':
 		//Registro
-		include('vistas/modulos/registro.php');
+		include('vistas/modulos/docker.php');
 		break;
 
 		case '2':
 		//Perfil
-		include('vistas/modulos/perfil.php');
+		include('vistas/modulos/ventanaCalendario.php');
 		break;
 
 		case '3':
 		//Nueva publicación
-		include('vistas/modulos/nueva.php');
+		include('vistas/modulos/ventanaContacto.php');
 		//7plugin de subida de imagenes
 		break;
 
 		case '4':
 		//Publicación
-		include('vistas/modulos/publicacion.php');
-		include('vistas/modulos/modalContacta.php');
-		include('vistas/modulos/modalAgenda.php');
+		include('vistas/modulos/ventanaInfo.php');
 		break;
 
 		case '5':
 		//Buscador
-		include('vistas/modulos/buscador.php');
-		//Dentro de esta vista el panel lateral del buscador es un módulo
-		//y el mapa con los resultados es otro.
+		include('vistas/modulos/ventanaMapa.php');
 		break;
 
 		case '6':
 		//Panel de publicaciones
-		include('vistas/modulos/panelPublicaciones.php');
-		include('vistas/modulos/modalElimina.php');
+		include('vistas/modulos/ventanaMision.php');
 		break;
-
-		case '7':
-		//Configuración de la cuenta
-		include('vistas/modulos/configuracionCuenta.php');
-		break;
-
-		case '8':
-		//Cambio de contraseña dentro del perfil
-		include('vistas/modulos/contraseniaNueva.php');
-		break;
-
-		case '9':
-		//Recuperación de contraseña
-		include('vistas/modulos/recuperarContrasena.php');
-		break;
-
-		case '10':
-		//Recuperación de contraseña
-		include('vistas/modulos/cambiarContrasena.php');
-		break;
-
-		case '11':
-		//Planes inmobiliarios
-		include('vistas/modulos/planes.php');
-		break;
-
-		case '12':
-		//Eliminación de cuenta
-		include('vistas/modulos/eliminarCuenta.php');
-		break;
-
-		case '13':
-		//Formulario de pago
-		include('vistas/modulos/formularioPago.php');
-		break;
-
-		case '14':
-		//Activación de cuenta
-		include('vistas/modulos/activacionCuenta.php');
-		break;
-
-		case '15':
-		//Activación de cuenta
-		include('vistas/modulos/mensajeria.php');
-		break;
-
-		case '16':
-		//Politicas uso
-		include('vistas/modulos/politicas.php');
-		break;
-
-		case '17':
-		//cookies
-		include('vistas/modulos/cookies.php');
-		break;
-
-		case '18':
-		//Condiciones
-		include('vistas/modulos/condiciones.php');
-		break;
-
-		
 
 
 	}
 }
-else{
-	include('vistas/modulos/indexCarousel.php');
-	include('vistas/modulos/masonryIndex.php');//indexCarousel es el original
-}
+
 
 ?>
 
