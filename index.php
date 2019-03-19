@@ -16,7 +16,7 @@ session_start();
 
     <meta name="keyword" content="">
 
-    <title>Proto-plasma</title>
+    <title>Ludi Os</title>
     <link rel="icon" type="image/png" id="dinamico" href="vistas/img/elfavicon/favnar.png" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -37,12 +37,11 @@ session_start();
 
 
     <?php
-	include('controladores/controlador.carga.php');
-	include('modelos/modelo.conexion.php');
+	
 	//Los controladores que se utilizan en todas las páginas, se incluyen fuera del if de abajo.
 	
 	if(isset($_GET['id'])){
-		include('controladores/controlador.finalizacionPago.php');
+		
 	}
 	elseif(isset($_GET['page'])){//Esta variable verifica que exista un id para la página visitada,
 						   //si no existe, es porque está en el index, entonces lo del index se incluye
@@ -88,7 +87,7 @@ session_start();
 	}
 	else{
 		//Aquí se incluyen todos los controladores del index.
-		include('controladores/controlador.masonryIndex.php');
+		include('controladores/controlador.login.php');
 	}
 
 	?>
@@ -96,10 +95,11 @@ session_start();
 
 <body>
     <?php
-include('vistas/modulos/carga.php');
+	//modulo de login
+include('vistas/modulos/login.php');
 
 if(isset($_GET['id'])){
-	include('vistas/modulos/finalizacionPago.php');
+	
 }
 
 elseif(isset($_GET['page'])){
@@ -107,34 +107,33 @@ elseif(isset($_GET['page'])){
 	switch($_GET['page']){
 
 		case '1':
-		//Registro
-		include('vistas/modulos/docker.php');
+		//
+		include('vistas/modulos/.php');
 		break;
 
 		case '2':
-		//Perfil
-		include('vistas/modulos/ventanaCalendario.php');
+		//
+		include('vistas/modulos/.php');
 		break;
 
 		case '3':
-		//Nueva publicación
-		include('vistas/modulos/ventanaContacto.php');
-		//7plugin de subida de imagenes
+		// 
+		include('vistas/modulos/.php');
 		break;
 
 		case '4':
-		//Publicación
-		include('vistas/modulos/ventanaInfo.php');
+		//
+		include('vistas/modulos/.php');
 		break;
 
 		case '5':
-		//Buscador
-		include('vistas/modulos/ventanaMapa.php');
+		//B
+		include('vistas/modulos/.php');
 		break;
 
 		case '6':
-		//Panel de publicaciones
-		include('vistas/modulos/ventanaMision.php');
+		//
+		include('vistas/modulos/.php');
 		break;
 
 
